@@ -1,0 +1,18 @@
+IMPORTANT: RESUME FILE PLACEHOLDER
+
+Please replace this file with your actual resume in PDF format.
+
+Instructions:
+1. Delete this "resume.pdf" file (or overwrite it)
+2. Add your actual resume PDF
+3. Make sure it's named exactly: resume.pdf
+4. Place it in the same directory as index.html
+
+The download button in your portfolio will automatically link to this file.
+
+If you want to use a different filename:
+- Open index.html
+- Find: href="resume.pdf"
+- Change it to your resume filename
+
+Example: href="Anuj_Ahirwar_Resume.pdf"

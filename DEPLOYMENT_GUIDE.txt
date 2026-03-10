@@ -1,0 +1,131 @@
+═══════════════════════════════════════════════════════════
+         PORTFOLIO DEPLOYMENT GUIDE
+═══════════════════════════════════════════════════════════
+
+Your portfolio is ready to deploy! Choose one of the methods below:
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+METHOD 1: VERCEL (RECOMMENDED - FASTEST & EASIEST)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Step 1: Install Vercel CLI (if not installed)
+──────────────────────────────────────────────
+npm install -g vercel
+
+Step 2: Deploy
+──────────────
+cd c:\Users\ACER\Desktop\AnujsPortfolio
+vercel
+
+Step 3: Follow the prompts:
+──────────────────────────────
+• "Set up and deploy?" → Yes
+• "Which scope?" → Your account
+• "Link to existing project?" → No
+• "What's your project's name?" → anuj-portfolio (or your choice)
+• "In which directory is your code located?" → ./
+
+Step 4: Production Deployment
+────────────────────────────────
+vercel --prod
+
+✅ Your portfolio will be live at: https://anuj-portfolio.vercel.app
+   (or your custom project name)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+METHOD 2: VERCEL WEB INTERFACE (NO COMMAND LINE)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Step 1: Push to GitHub
+────────────────────────
+cd c:\Users\ACER\Desktop\AnujsPortfolio
+git init
+git add .
+git commit -m "Initial portfolio commit"
+
+# Create a new repository on GitHub, then:
+git remote add origin https://github.com/Anujahirwar01/portfolio.git
+git branch -M main
+git push -u origin main
+
+Step 2: Deploy on Vercel
+───────────────────────────
+1. Go to https://vercel.com
+2. Click "New Project"
+3. Import your GitHub repository
+4. Click "Deploy"
+
+✅ Done! Your site will be live in seconds
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+METHOD 3: NETLIFY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Option A: Drag & Drop (Easiest)
+─────────────────────────────────
+1. Go to https://app.netlify.com/drop
+2. Drag your AnujsPortfolio folder
+3. Done! Site is live
+
+Option B: Using CLI
+──────────────────
+npm install -g netlify-cli
+cd c:\Users\ACER\Desktop\AnujsPortfolio
+netlify deploy --prod
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+METHOD 4: GITHUB PAGES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Step 1: Push to GitHub
+────────────────────────
+cd c:\Users\ACER\Desktop\AnujsPortfolio
+git init
+git add .
+git commit -m "Initial portfolio commit"
+
+# Create repository on GitHub named "Anujahirwar01.github.io"
+git remote add origin https://github.com/Anujahirwar01/Anujahirwar01.github.io.git
+git branch -M main
+git push -u origin main
+
+Step 2: Enable GitHub Pages
+──────────────────────────────
+1. Go to repository Settings
+2. Click "Pages" in sidebar
+3. Source: main branch
+4. Click Save
+
+✅ Site will be live at: https://Anujahirwar01.github.io
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+IMPORTANT: BEFORE DEPLOYING
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✓ Replace resume.pdf with your actual resume
+✓ Test website locally (open index.html in browser)
+✓ Verify all links work
+✓ Check contact form
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CUSTOM DOMAIN (OPTIONAL)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Once deployed, you can add a custom domain like:
+• anujahirwar.com
+• yourname.dev
+
+All platforms (Vercel/Netlify/GitHub Pages) support custom domains.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NEED HELP?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+If you face any issues:
+1. Make sure you're in the correct directory
+2. Check that all files are present
+3. Ensure you have internet connection
+
+RECOMMENDED: Use Vercel CLI (Method 1) - fastest and easiest!
+
+═══════════════════════════════════════════════════════════
